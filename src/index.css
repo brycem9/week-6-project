@@ -1,0 +1,74 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+
+.row {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+ 
+}
+
+.main__header {
+  font-size: 30px;
+}
+
+.menu__icon {
+  display: none;
+}
+
+.spinner {
+animation: spinning 600ms infinite;
+}
+
+@keyframes spinning {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+
+@media (max-width: 796px)  {
+  .movie__card {
+  width: 50%;
+  }
+
+  .nav__links {
+    display: none;
+  }
+
+  .menu__icon {
+    display: block;
+  }
+
+}
+
+
+
+@media (max-width: 687px) {
+  .movie__card {
+  width: 55%;
+  margin-left: 120px;
+  }
+}
+
+@media (max-width: 580px) {
+  .main__header {
+    font-size: 25px;
+  }
+  .nav__logo {
+    width: 130px;
+  }
+}
